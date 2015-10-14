@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		215628061BCDD8DE007494F6 /* NURFduinoDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 215628051BCDD8DE007494F6 /* NURFduinoDevice.m */; settings = {ASSET_TAGS = (); }; };
+		2156280F1BCDDAB5007494F6 /* NURFduinoDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2156280E1BCDDAB5007494F6 /* NURFduinoDeviceManager.m */; settings = {ASSET_TAGS = (); }; };
+		215628131BCDDF9A007494F6 /* NURFduinoDeviceManager+DeviceEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 215628121BCDDF9A007494F6 /* NURFduinoDeviceManager+DeviceEventHandler.m */; settings = {ASSET_TAGS = (); }; };
+		2156281D1BCDEDCC007494F6 /* NSData+NURFDataTransforming.m in Sources */ = {isa = PBXBuildFile; fileRef = 2156281C1BCDEDCC007494F6 /* NSData+NURFDataTransforming.m */; settings = {ASSET_TAGS = (); }; };
+		215628211BCDEF9C007494F6 /* NURFDataReadingExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2156281F1BCDEF9C007494F6 /* NURFDataReadingExampleViewController.m */; settings = {ASSET_TAGS = (); }; };
+		215628221BCDEF9C007494F6 /* NURFDataReadingExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 215628201BCDEF9C007494F6 /* NURFDataReadingExampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		2166ED991BCDAE5E0033681D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2166ED981BCDAE5E0033681D /* main.m */; };
+		2166ED9C1BCDAE5E0033681D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2166ED9B1BCDAE5E0033681D /* AppDelegate.m */; };
+		2166ED9F1BCDAE5E0033681D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2166ED9E1BCDAE5E0033681D /* ViewController.m */; };
+		2166EDA21BCDAE5E0033681D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2166EDA01BCDAE5E0033681D /* Main.storyboard */; };
+		2166EDA41BCDAE5E0033681D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2166EDA31BCDAE5E0033681D /* Assets.xcassets */; };
+		2166EDA71BCDAE5E0033681D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2166EDA51BCDAE5E0033681D /* LaunchScreen.storyboard */; };
+		2166EDB21BCDAE5E0033681D /* NURFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2166EDB11BCDAE5E0033681D /* NURFTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2166EDAE1BCDAE5E0033681D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2166ED8C1BCDAE5E0033681D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2166ED931BCDAE5E0033681D;
+			remoteInfo = NURF;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		215628041BCDD8DE007494F6 /* NURFduinoDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NURFduinoDevice.h; sourceTree = "<group>"; };
+		215628051BCDD8DE007494F6 /* NURFduinoDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NURFduinoDevice.m; sourceTree = "<group>"; };
+		2156280B1BCDDA75007494F6 /* NURFduinoDeviceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NURFduinoDeviceDelegate.h; sourceTree = "<group>"; };
+		2156280D1BCDDAB5007494F6 /* NURFduinoDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NURFduinoDeviceManager.h; sourceTree = "<group>"; };
+		2156280E1BCDDAB5007494F6 /* NURFduinoDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NURFduinoDeviceManager.m; sourceTree = "<group>"; };
+		215628101BCDDE8B007494F6 /* NURFduinoDeviceManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NURFduinoDeviceManagerDelegate.h; sourceTree = "<group>"; };
+		215628111BCDDF9A007494F6 /* NURFduinoDeviceManager+DeviceEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NURFduinoDeviceManager+DeviceEventHandler.h"; sourceTree = "<group>"; };
+		215628121BCDDF9A007494F6 /* NURFduinoDeviceManager+DeviceEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NURFduinoDeviceManager+DeviceEventHandler.m"; sourceTree = "<group>"; };
+		2156281B1BCDEDCC007494F6 /* NSData+NURFDataTransforming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NURFDataTransforming.h"; sourceTree = "<group>"; };
+		2156281C1BCDEDCC007494F6 /* NSData+NURFDataTransforming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NURFDataTransforming.m"; sourceTree = "<group>"; };
+		2156281E1BCDEF9C007494F6 /* NURFDataReadingExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NURFDataReadingExampleViewController.h; sourceTree = "<group>"; };
+		2156281F1BCDEF9C007494F6 /* NURFDataReadingExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NURFDataReadingExampleViewController.m; sourceTree = "<group>"; };
+		215628201BCDEF9C007494F6 /* NURFDataReadingExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NURFDataReadingExampleViewController.xib; sourceTree = "<group>"; };
+		2166ED941BCDAE5E0033681D /* NURF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NURF.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2166ED981BCDAE5E0033681D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2166ED9A1BCDAE5E0033681D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2166ED9B1BCDAE5E0033681D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2166ED9D1BCDAE5E0033681D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2166ED9E1BCDAE5E0033681D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2166EDA11BCDAE5E0033681D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2166EDA31BCDAE5E0033681D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2166EDA61BCDAE5E0033681D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2166EDA81BCDAE5E0033681D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2166EDAD1BCDAE5E0033681D /* NURFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NURFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2166EDB11BCDAE5E0033681D /* NURFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NURFTests.m; sourceTree = "<group>"; };
+		2166EDB31BCDAE5E0033681D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2166ED911BCDAE5E0033681D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2166EDAA1BCDAE5E0033681D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		215628001BCDD845007494F6 /* NURFduino */ = {
+			isa = PBXGroup;
+			children = (
+				2156280C1BCDDAA6007494F6 /* NURFduinoDevice */,
+				215628141BCDE966007494F6 /* NURFduinoDeviceManager */,
+			);
+			name = NURFduino;
+			sourceTree = "<group>";
+		};
+		2156280C1BCDDAA6007494F6 /* NURFduinoDevice */ = {
+			isa = PBXGroup;
+			children = (
+				215628041BCDD8DE007494F6 /* NURFduinoDevice.h */,
+				215628051BCDD8DE007494F6 /* NURFduinoDevice.m */,
+				2156280B1BCDDA75007494F6 /* NURFduinoDeviceDelegate.h */,
+				2156281B1BCDEDCC007494F6 /* NSData+NURFDataTransforming.h */,
+				2156281C1BCDEDCC007494F6 /* NSData+NURFDataTransforming.m */,
+			);
+			name = NURFduinoDevice;
+			sourceTree = "<group>";
+		};
+		215628141BCDE966007494F6 /* NURFduinoDeviceManager */ = {
+			isa = PBXGroup;
+			children = (
+				2156280D1BCDDAB5007494F6 /* NURFduinoDeviceManager.h */,
+				2156280E1BCDDAB5007494F6 /* NURFduinoDeviceManager.m */,
+				215628111BCDDF9A007494F6 /* NURFduinoDeviceManager+DeviceEventHandler.h */,
+				215628121BCDDF9A007494F6 /* NURFduinoDeviceManager+DeviceEventHandler.m */,
+				215628101BCDDE8B007494F6 /* NURFduinoDeviceManagerDelegate.h */,
+			);
+			name = NURFduinoDeviceManager;
+			sourceTree = "<group>";
+		};
+		2166ED8B1BCDAE5E0033681D = {
+			isa = PBXGroup;
+			children = (
+				2156281E1BCDEF9C007494F6 /* NURFDataReadingExampleViewController.h */,
+				2156281F1BCDEF9C007494F6 /* NURFDataReadingExampleViewController.m */,
+				215628201BCDEF9C007494F6 /* NURFDataReadingExampleViewController.xib */,
+				215628001BCDD845007494F6 /* NURFduino */,
+				2166ED961BCDAE5E0033681D /* NURF */,
+				2166EDB01BCDAE5E0033681D /* NURFTests */,
+				2166ED951BCDAE5E0033681D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2166ED951BCDAE5E0033681D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2166ED941BCDAE5E0033681D /* NURF.app */,
+				2166EDAD1BCDAE5E0033681D /* NURFTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2166ED961BCDAE5E0033681D /* NURF */ = {
+			isa = PBXGroup;
+			children = (
+				2166ED9A1BCDAE5E0033681D /* AppDelegate.h */,
+				2166ED9B1BCDAE5E0033681D /* AppDelegate.m */,
+				2166ED9D1BCDAE5E0033681D /* ViewController.h */,
+				2166ED9E1BCDAE5E0033681D /* ViewController.m */,
+				2166EDA01BCDAE5E0033681D /* Main.storyboard */,
+				2166EDA31BCDAE5E0033681D /* Assets.xcassets */,
+				2166EDA51BCDAE5E0033681D /* LaunchScreen.storyboard */,
+				2166EDA81BCDAE5E0033681D /* Info.plist */,
+				2166ED971BCDAE5E0033681D /* Supporting Files */,
+			);
+			path = NURF;
+			sourceTree = "<group>";
+		};
+		2166ED971BCDAE5E0033681D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2166ED981BCDAE5E0033681D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2166EDB01BCDAE5E0033681D /* NURFTests */ = {
+			isa = PBXGroup;
+			children = (
+				2166EDB11BCDAE5E0033681D /* NURFTests.m */,
+				2166EDB31BCDAE5E0033681D /* Info.plist */,
+			);
+			path = NURFTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2166ED931BCDAE5E0033681D /* NURF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2166EDB61BCDAE5E0033681D /* Build configuration list for PBXNativeTarget "NURF" */;
+			buildPhases = (
+				2166ED901BCDAE5E0033681D /* Sources */,
+				2166ED911BCDAE5E0033681D /* Frameworks */,
+				2166ED921BCDAE5E0033681D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NURF;
+			productName = NURF;
+			productReference = 2166ED941BCDAE5E0033681D /* NURF.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2166EDAC1BCDAE5E0033681D /* NURFTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2166EDB91BCDAE5E0033681D /* Build configuration list for PBXNativeTarget "NURFTests" */;
+			buildPhases = (
+				2166EDA91BCDAE5E0033681D /* Sources */,
+				2166EDAA1BCDAE5E0033681D /* Frameworks */,
+				2166EDAB1BCDAE5E0033681D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2166EDAF1BCDAE5E0033681D /* PBXTargetDependency */,
+			);
+			name = NURFTests;
+			productName = NURFTests;
+			productReference = 2166EDAD1BCDAE5E0033681D /* NURFTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2166ED8C1BCDAE5E0033681D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NURF;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Northwestern University";
+				TargetAttributes = {
+					2166ED931BCDAE5E0033681D = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					2166EDAC1BCDAE5E0033681D = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 2166ED931BCDAE5E0033681D;
+					};
+				};
+			};
+			buildConfigurationList = 2166ED8F1BCDAE5E0033681D /* Build configuration list for PBXProject "NURF" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2166ED8B1BCDAE5E0033681D;
+			productRefGroup = 2166ED951BCDAE5E0033681D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2166ED931BCDAE5E0033681D /* NURF */,
+				2166EDAC1BCDAE5E0033681D /* NURFTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2166ED921BCDAE5E0033681D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2166EDA71BCDAE5E0033681D /* LaunchScreen.storyboard in Resources */,
+				2166EDA41BCDAE5E0033681D /* Assets.xcassets in Resources */,
+				2166EDA21BCDAE5E0033681D /* Main.storyboard in Resources */,
+				215628221BCDEF9C007494F6 /* NURFDataReadingExampleViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2166EDAB1BCDAE5E0033681D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2166ED901BCDAE5E0033681D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2166ED9F1BCDAE5E0033681D /* ViewController.m in Sources */,
+				2166ED9C1BCDAE5E0033681D /* AppDelegate.m in Sources */,
+				2156280F1BCDDAB5007494F6 /* NURFduinoDeviceManager.m in Sources */,
+				215628211BCDEF9C007494F6 /* NURFDataReadingExampleViewController.m in Sources */,
+				2166ED991BCDAE5E0033681D /* main.m in Sources */,
+				215628131BCDDF9A007494F6 /* NURFduinoDeviceManager+DeviceEventHandler.m in Sources */,
+				2156281D1BCDEDCC007494F6 /* NSData+NURFDataTransforming.m in Sources */,
+				215628061BCDD8DE007494F6 /* NURFduinoDevice.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2166EDA91BCDAE5E0033681D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2166EDB21BCDAE5E0033681D /* NURFTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2166EDAF1BCDAE5E0033681D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2166ED931BCDAE5E0033681D /* NURF */;
+			targetProxy = 2166EDAE1BCDAE5E0033681D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2166EDA01BCDAE5E0033681D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2166EDA11BCDAE5E0033681D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2166EDA51BCDAE5E0033681D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2166EDA61BCDAE5E0033681D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2166EDB41BCDAE5E0033681D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2166EDB51BCDAE5E0033681D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2166EDB71BCDAE5E0033681D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Philip Meyers (46DDEHAMXS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Philip Meyers (46DDEHAMXS)";
+				INFOPLIST_FILE = NURF/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NUEmpathicSystems.NURF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b13a62e6-14ce-4d01-b1e1-9c682ab9aed8";
+			};
+			name = Debug;
+		};
+		2166EDB81BCDAE5E0033681D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Philip Meyers";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Philip Meyers";
+				INFOPLIST_FILE = NURF/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NUEmpathicSystems.NURF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "93f8c34b-d751-4483-8221-5dc6c300bac6";
+			};
+			name = Release;
+		};
+		2166EDBA1BCDAE5E0033681D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NURFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NUEmpathicSystems.NURFTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NURF.app/NURF";
+			};
+			name = Debug;
+		};
+		2166EDBB1BCDAE5E0033681D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NURFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NUEmpathicSystems.NURFTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NURF.app/NURF";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2166ED8F1BCDAE5E0033681D /* Build configuration list for PBXProject "NURF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2166EDB41BCDAE5E0033681D /* Debug */,
+				2166EDB51BCDAE5E0033681D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2166EDB61BCDAE5E0033681D /* Build configuration list for PBXNativeTarget "NURF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2166EDB71BCDAE5E0033681D /* Debug */,
+				2166EDB81BCDAE5E0033681D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2166EDB91BCDAE5E0033681D /* Build configuration list for PBXNativeTarget "NURFTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2166EDBA1BCDAE5E0033681D /* Debug */,
+				2166EDBB1BCDAE5E0033681D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2166ED8C1BCDAE5E0033681D /* Project object */;
+}
