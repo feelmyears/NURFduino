@@ -9,18 +9,19 @@
 #import "AppDelegate.h"
 #import "NURFduinoDeviceManager.h"
 #import "NURFDataReadingExampleViewController.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "NURFTestServerService.h"
 
 @interface AppDelegate ()
 @property (nonatomic, strong) UIViewController *controller;
 @property (nonatomic, strong) NURFduinoDeviceManager *deviceManager;
-
+@property (nonatomic, strong) NURFTestServerService *testServerService;
+@property (nonatomic, strong) AFHTTPRequestOperationManager *requestOperationManager;
 @end
 
 @implementation AppDelegate
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	NURFDataReadingExampleViewController *exampleVC = [[NURFDataReadingExampleViewController alloc] initWithDeviceManager:self.deviceManager];
+	NURFDataReadingExampleViewController *exampleVC = [[NURFDataReadingExampleViewController alloc] initWithDeviceManager:self.deviceManager testServerService:self.testServerService];
 	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:exampleVC];
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	self.window.rootViewController = navigationController;
@@ -35,6 +36,20 @@
 		_deviceManager = [NURFduinoDeviceManager new];
 	}
 	return _deviceManager;
+}
+
+- (NURFTestServerService *)testServerService {
+	if (!_testServerService) {
+		_testServerService = [[NURFTestServerService alloc] initWithRequestOperationManager:self.requestOperationManager];
+	}
+	return _testServerService;
+}
+
+- (AFHTTPRequestOperationManager *)requestOperationManager {
+	if (!_requestOperationManager) {
+		_requestOperationManager = [AFHTTPRequestOperationManager manager];
+	}
+	return _requestOperationManager;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -11,6 +11,8 @@
 #import "NURFduinoDeviceManager.h"
 #import "NURFduinoDeviceManagerDelegate.h"
 #import "NURFduinoDeviceDelegate.h"
+#import "NURFTestServerServiceInterface.h"
+#import "Bolts.h"
 
 @interface NURFDataReadingExampleViewController()
 <
@@ -23,10 +25,12 @@ NURFduinoDeviceDelegate
 @end
 
 @implementation NURFDataReadingExampleViewController
-- (instancetype)initWithDeviceManager:(NURFduinoDeviceManager *)deviceManager {
+- (instancetype)initWithDeviceManager:(NURFduinoDeviceManager *)deviceManager
+					testServerService:(id<NURFTestServerServiceInterface>)testServerService {
 	if (self = [super initWithNibName:NSStringFromClass([self class]) bundle:nil]) {
 		_deviceManager = deviceManager;
 		_deviceManager.delegate = self;
+		_testServerService = testServerService;
 		_actionButton.userInteractionEnabled = NO;
 		_outputLabel.text = @"No devices found";
 	}
@@ -82,6 +86,15 @@ NURFduinoDeviceDelegate
 	int output;
 	[data getBytes: &output length: sizeof(output)];
 	_outputLabel.text = [NSString stringWithFormat:@"%d", output];
+
+	[[_testServerService postDataToServer:@(output)] continueWithBlock:^id(BFTask *task) {
+		if (task.result) {
+			NSLog(@"Successfully recorded data: %d", output);
+		} else {
+			NSLog(@"Failed to record data: %d", output);
+		}
+		return nil;
+	}];
 }
 
 @end

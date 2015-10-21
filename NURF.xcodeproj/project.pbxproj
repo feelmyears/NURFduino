@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D4C5758AD919FAF93BB220D /* libPods-NURF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F31DB6FCA031EF17332D7A /* libPods-NURF.a */; };
+		213BA0F41BD7540F0064386A /* NURFTestServerService.m in Sources */ = {isa = PBXBuildFile; fileRef = 213BA0F31BD7540F0064386A /* NURFTestServerService.m */; settings = {ASSET_TAGS = (); }; };
 		215628061BCDD8DE007494F6 /* NURFduinoDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 215628051BCDD8DE007494F6 /* NURFduinoDevice.m */; settings = {ASSET_TAGS = (); }; };
 		2156280F1BCDDAB5007494F6 /* NURFduinoDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2156280E1BCDDAB5007494F6 /* NURFduinoDeviceManager.m */; settings = {ASSET_TAGS = (); }; };
 		215628131BCDDF9A007494F6 /* NURFduinoDeviceManager+DeviceEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 215628121BCDDF9A007494F6 /* NURFduinoDeviceManager+DeviceEventHandler.m */; settings = {ASSET_TAGS = (); }; };
@@ -33,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		213BA0F21BD7540F0064386A /* NURFTestServerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NURFTestServerService.h; sourceTree = "<group>"; };
+		213BA0F31BD7540F0064386A /* NURFTestServerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NURFTestServerService.m; sourceTree = "<group>"; };
+		213BA0F51BD757EF0064386A /* NURFTestServerServiceInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NURFTestServerServiceInterface.h; sourceTree = "<group>"; };
 		215628041BCDD8DE007494F6 /* NURFduinoDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NURFduinoDevice.h; sourceTree = "<group>"; };
 		215628051BCDD8DE007494F6 /* NURFduinoDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NURFduinoDevice.m; sourceTree = "<group>"; };
 		2156280B1BCDDA75007494F6 /* NURFduinoDeviceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NURFduinoDeviceDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +64,9 @@
 		2166EDAD1BCDAE5E0033681D /* NURFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NURFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2166EDB11BCDAE5E0033681D /* NURFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NURFTests.m; sourceTree = "<group>"; };
 		2166EDB31BCDAE5E0033681D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317E70F0685175EB9EC2B3E6 /* Pods-NURF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NURF.release.xcconfig"; path = "Pods/Target Support Files/Pods-NURF/Pods-NURF.release.xcconfig"; sourceTree = "<group>"; };
+		C196C75219F5D905E904898F /* Pods-NURF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NURF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NURF/Pods-NURF.debug.xcconfig"; sourceTree = "<group>"; };
+		D0F31DB6FCA031EF17332D7A /* libPods-NURF.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NURF.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D4C5758AD919FAF93BB220D /* libPods-NURF.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +88,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		213BA0F01BD753D00064386A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				213BA0F11BD753D80064386A /* Web Posting Service */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		213BA0F11BD753D80064386A /* Web Posting Service */ = {
+			isa = PBXGroup;
+			children = (
+				213BA0F51BD757EF0064386A /* NURFTestServerServiceInterface.h */,
+				213BA0F21BD7540F0064386A /* NURFTestServerService.h */,
+				213BA0F31BD7540F0064386A /* NURFTestServerService.m */,
+			);
+			name = "Web Posting Service";
+			sourceTree = "<group>";
+		};
 		215628001BCDD845007494F6 /* NURFduino */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +142,7 @@
 		2166ED8B1BCDAE5E0033681D = {
 			isa = PBXGroup;
 			children = (
+				213BA0F01BD753D00064386A /* Services */,
 				2156281E1BCDEF9C007494F6 /* NURFDataReadingExampleViewController.h */,
 				2156281F1BCDEF9C007494F6 /* NURFDataReadingExampleViewController.m */,
 				215628201BCDEF9C007494F6 /* NURFDataReadingExampleViewController.xib */,
@@ -122,6 +150,8 @@
 				2166ED961BCDAE5E0033681D /* NURF */,
 				2166EDB01BCDAE5E0033681D /* NURFTests */,
 				2166ED951BCDAE5E0033681D /* Products */,
+				32964048132229E970375806 /* Pods */,
+				E043E96E74DE8F08DDADD62E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +197,23 @@
 			path = NURFTests;
 			sourceTree = "<group>";
 		};
+		32964048132229E970375806 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C196C75219F5D905E904898F /* Pods-NURF.debug.xcconfig */,
+				317E70F0685175EB9EC2B3E6 /* Pods-NURF.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E043E96E74DE8F08DDADD62E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0F31DB6FCA031EF17332D7A /* libPods-NURF.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2166EDB61BCDAE5E0033681D /* Build configuration list for PBXNativeTarget "NURF" */;
 			buildPhases = (
+				4F44D66FC86E5AD1F5300887 /* Check Pods Manifest.lock */,
 				2166ED901BCDAE5E0033681D /* Sources */,
 				2166ED911BCDAE5E0033681D /* Frameworks */,
 				2166ED921BCDAE5E0033681D /* Resources */,
+				9624ADC18D1DE3DF6996B3B2 /* Embed Pods Frameworks */,
+				21A5854B490E7DB7BA84E046 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +267,11 @@
 				TargetAttributes = {
 					2166ED931BCDAE5E0033681D = {
 						CreatedOnToolsVersion = 7.0.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					2166EDAC1BCDAE5E0033681D = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -264,6 +319,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21A5854B490E7DB7BA84E046 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NURF/Pods-NURF-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F44D66FC86E5AD1F5300887 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9624ADC18D1DE3DF6996B3B2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NURF/Pods-NURF-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2166ED901BCDAE5E0033681D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -275,6 +378,7 @@
 				215628211BCDEF9C007494F6 /* NURFDataReadingExampleViewController.m in Sources */,
 				2166ED991BCDAE5E0033681D /* main.m in Sources */,
 				215628131BCDDF9A007494F6 /* NURFduinoDeviceManager+DeviceEventHandler.m in Sources */,
+				213BA0F41BD7540F0064386A /* NURFTestServerService.m in Sources */,
 				2156281D1BCDEDCC007494F6 /* NSData+NURFDataTransforming.m in Sources */,
 				215628061BCDD8DE007494F6 /* NURFduinoDevice.m in Sources */,
 			);
@@ -400,6 +504,7 @@
 		};
 		2166EDB71BCDAE5E0033681D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C196C75219F5D905E904898F /* Pods-NURF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Philip Meyers (46DDEHAMXS)";
@@ -414,6 +519,7 @@
 		};
 		2166EDB81BCDAE5E0033681D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 317E70F0685175EB9EC2B3E6 /* Pods-NURF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Philip Meyers";
